@@ -10,6 +10,9 @@ source "$HOME/powerlevel10k/powerlevel10k.zsh-theme"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+autoload -U select-word-style
+select-word-style bash
+
 
 [ -n "$EAT_SHELL_INTEGRATION_DIR" ] && \
     source "$EAT_SHELL_INTEGRATION_DIR/zsh"
